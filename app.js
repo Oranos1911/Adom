@@ -1,6 +1,9 @@
+require('dotenv').config();
 const discord = require("discord.js")
-const {token , channel_id} = require("./config.json")
+const {channel_id} = require("./config.json")
 
+//Import login token env variable
+const token = process.env.TOKEN
 // Export  modules
 const command = require("./command.js")
 const oref = require("./oref.js")
